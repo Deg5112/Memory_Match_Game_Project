@@ -166,7 +166,7 @@ body{
 
 
 .front.morph, .back.morph{
-    background: radial-gradient(circle at 79% 17%, rgb(255, 101, 92) 6%, #ffffff 49%, rgb(29, 134, 38) 84%);
+    background: radial-gradient(circle at 76% 17%, rgb(255, 101, 92) 8%, #ffffff 49%, rgb(0, 115, 10) 75%);
     height: 75%;
     border-radius: 50%;
     top: 15%;
@@ -176,7 +176,6 @@ body{
 
 .bounce{
     bottom: 23px;
-
 }
 
 .front, .back{
