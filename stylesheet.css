@@ -166,11 +166,11 @@ body{
 
 .morphEnd{
     background: radial-gradient(circle at 79% 17%, rgb(255, 101, 92) 6%, #ffffff 49%, rgb(29, 134, 38) 84%);
-    height: 50% !important;
-    width:50% !important;
+    height: 45% !important;
+    width:83% !important;
     border-radius: 50% !important;
     top: 25%;
-    left: 30%;
+    left: 10%;
     border: none;
 }
 @-webkit-keyframes morph {
@@ -184,11 +184,11 @@ body{
 
     to{
         background: radial-gradient(circle at 79% 17%, rgb(255, 101, 92) 6%, #ffffff 49%, rgb(29, 134, 38) 84%);
-        height: 50%;
-        width:50%;
+        height: 45%;
+        width:83%;
         border-radius: 50%;
         top: 25%;
-        left: 30%;
+        left: 10%;
         border: none;
     }
 }
@@ -197,18 +197,15 @@ body{
     -webkit-animation: morph 1s forwards;
 }
 
-@-webkit-keyframes spin{
-    from{
-        -webkit-transform: rotateY(0deg);
+@-webkit-keyframes spinZ{
+    100%{
+        -webkit-transform: rotateZ(360deg);
+        position: relative;
     }
-    to{
-        -webkit-tranform: rotateY(360deg);
-    }
-
 }
 
-.spin{
-    -webkit-animation: spin 3s;
+.spinZ{
+    -webkit-animation: spinZ .1s 5;
 }
 
 
