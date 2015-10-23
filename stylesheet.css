@@ -196,6 +196,18 @@ body{
     /*removed forwards*/
 }
 
+@-webkit-keyframes spin {
+    from{
+        -webkit-transform: rotateZ(0);
+    }
+    to{
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+.spin{
+    -webkit-animation: spin 2s;
+}
 
 .bounce{
     bottom: 23px;
