@@ -183,6 +183,8 @@ p {
         height: 100%;
         position: absolute;
         border-radius: 5%;
+        border: 1px solid white;
+
     }
 
     to{
@@ -192,7 +194,7 @@ p {
         border-radius: 50%;
         top: 27%;
         left: 12%;
-        border: none;
+        border: none !important;
     }
 }
 
@@ -395,6 +397,16 @@ div#modalAbout {
 
 }
 
+
+.removeBorder{
+    border: none !important;
+}
+
+#modalIntro p{
+    font-size: 22px;
+    margin-top: 10%;
+}
+
 div#modalAbout p {
     font-size: 25px;
 }
@@ -498,7 +510,7 @@ div#nextRound {
     font-size: 2.5vw;
     text-align: center;
     color: rgb(255, 0, 0);
-    border-radius: 6%;
+    border-radius: 5px;
     text-shadow: 0px 2px 0px #f9ceb1;
 
 }
@@ -522,10 +534,11 @@ div#nextRound {
     background: linear-gradient(#00d95d, #009746);
     color: white;
     position: absolute;
-    top: 75%;
+    top: 70%;
     padding: 1% 4%;
-    font-size: 80%;
-    right: 43%;
+    font-size: 3.5vw;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 #modalIntro .btn:hover{
@@ -608,13 +621,15 @@ div#nextRound {
         background: linear-gradient(#00d95d, #009746);
         color: white;
         position: absolute;
-        top: 90%;
+        top: 70%;
         padding: 1% 4%;
-        font-size: 112%;
-        right: 41%;
+        font-size: 5vw;
+        right: 50%;
+        transform: translateX(50%);
     }
     #modalIntro p{
         font-size: 22px;
+        margin-top: 10%;
     }
 
     #modalIntro h1{
@@ -641,7 +656,7 @@ div#playAgain {
     font-size: 2.5vw;
     text-align: center;
     color: rgb(255, 0, 0);
-    border-radius: 6%;
+    border-radius: 5px;
     text-shadow: 0px 2px 0px #f9ceb1;
 
 }
@@ -658,10 +673,11 @@ div#playAgain {
     background: linear-gradient(#00d95d, #009746);
     color: white;
     position: absolute;
-    top: 54%;
-    padding: 1% 4%;
-    font-size: 80%;
-    right: 37%;
+    padding: 2% 3%;
+    font-size: 4vw;
+    right: 50%;
+    transform: translateX(50%);
+    top: 60%;
 
 }
 
@@ -684,10 +700,11 @@ audio {
 @media screen and (max-width: 768px){
     #playAgain .btn {
 
-        top: 62%;
         padding: 2% 3%;
-        font-size: 140%;
-        right: 35%;
+        font-size: 4vw;
+        right: 50%;
+        transform: translateX(50%);
+        top: 80%;
     }
 }
 

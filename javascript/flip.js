@@ -13,9 +13,14 @@ var roundVal;
 var response = null;
 var charCode;
 var addpoints = 0;
+var timerBool = true;
 
 //flip function
 function flip(target_element) {
+    if(!timerBool){
+        return;
+    }
+
     console.log(totalMatches);
     var nodeList = $('.card');
     var curCount = 0;
@@ -66,11 +71,10 @@ function flip(target_element) {
 
                     $card2.find('.front').on('webkitTransitionEnd', function(){
                         console.log('flip done');
-                        $card2.find('.front, .back').removeAttr('src');
-                        $card2.find('.front, .back').addClass('morph');//css animation morph
+                        $card2.find('.front, .back').addClass('removeBorder');
+                        //$card2.find('.clicked').addClass('removeBorder');
+                        $card2.find('.front, .back').addClass('morph');
                     });
-
-
 
                     card1 = null;// cards go back to null
                     card2 = null;

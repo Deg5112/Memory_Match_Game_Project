@@ -57,6 +57,7 @@ function clock(startVal){
             $('.game-board .row').removeClass('warning');
             $('#playAgain').show();
             clearInterval(clockInterval);
+            timerBool = false;
 
         }
     }, 1000);
